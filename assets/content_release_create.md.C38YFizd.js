@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.YPpNXepj.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"content/release/create.md","filePath":"content/release/create.md"}'),r={name:"content/release/create.md"};function c(n,o,s,p,_,d){return a(),t("div")}const m=e(r,[["render",c]]);export{l as __pageData,m as default};
