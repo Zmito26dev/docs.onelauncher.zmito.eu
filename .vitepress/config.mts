@@ -4,11 +4,16 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "ONE Launcher — Docs",
   description: "The Minecraft Launcher for modded multiplayer servers",
+  head: [
+    ['link', { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Launcher Tutorials', link: '/tutorials/first-example', activeMatch: '/tutorials' },
+      { text: 'Content Instance', link: '/content/create-content', activeMatch: '/content' },
+      { text: 'Main Website', link: 'https://onelauncher.zmito.eu/' }
     ],
 
     search: {
@@ -17,10 +22,32 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Launcher Tutorials',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'First Feature', link: '/tutorials/first-example' },
+          { text: 'Second Feature', link: '/tutorials/second-example' }
+        ]
+      },
+      {
+        text: 'Content Instance',
+        items: [
+          { text: 'How to create a Content instance', link: '/content/create-content' },
+          {
+            text: 'Content Release',
+            base: '/content/release/',
+            items: [
+              { text: 'Create Content Release', link: 'create' },
+              { text: 'Publish Content Release', link: 'publish' }
+            ]
+          },
+          {
+            text: 'Content JSON',
+            base: '/content/json/',
+            items: [
+              { text: 'Create Content JSON', link: 'create' },
+              { text: 'Publish Content JSON', link: 'publish' }
+            ]
+          },
         ]
       }
     ],
@@ -31,7 +58,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/Zmito26dev/docs.onelauncher.zmito.eu' }
     ]
   }
 })

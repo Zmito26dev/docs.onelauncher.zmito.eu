@@ -4,14 +4,13 @@ layout: home
 
 hero:
   name: "ONE Launcher"
-  text: "Docs page"
   tagline: "The Minecraft Launcher for modded multiplayer servers"
   actions:
     - theme: brand
       text: Get Started
       link: /markdown-examples
     - theme: alt
-      text: Official Website
+      text: Main Website
       link: "https://onelauncher.zmito.eu/"
 
 features:
@@ -31,13 +30,3 @@ features:
     icon: 1️⃣
     details: Play and manage all your servers from ONE Launcher, with a very easy to use interface.
 ---
-
-<style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ea821a 30%, #ea471a);
-
-  --vp-home-hero-image-background-image: linear-gradient(120deg, #ea821a 30%, #ea471a);
-  --vp-home-hero-image-filter: blur(44px);
-}
-</style>
